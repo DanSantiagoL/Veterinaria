@@ -29,11 +29,11 @@ Está desarrollado en **Node.js + Express + MySQL** y expone endpoints para mane
     
     3.1. Crear la base de datos:
     ```
-    CREATE DATABASE veterinaria;
+    CREATE DATABASE mascotas_bd;
     ```
     3.2. Importar el archivo SQL incluido en la carpeta bd/
     ```
-    mysql -u root -p veterinaria < db/veterinaria.sql
+    mysql -u root -p mascotas_bd < db/mascotas_bd.sql
     ```
     **(tambien se puede importar copiando y pegando directamente el script)**
 5. Revisar credenciales de conexión en veterinaria-backend.js
@@ -42,7 +42,7 @@ Está desarrollado en **Node.js + Express + MySQL** y expone endpoints para mane
    host: 'localhost',
    user: 'root',
    password: '',    // pon tu contraseña si aplica
-   database: 'veterinaria'
+   database: 'mascotas_bd'
    });
    ```
 6. Levantar el servidor
